@@ -1,0 +1,13 @@
+/* Small devices (smartphones, less than 576px) */
+@media (max-width: 575.98px) {
+    html {
+        font-size: 8px;
+    }
+
+    iframe {
+        position: relative;
+        /* height: 100%; */
+        width: 100%;
+        border: 0;
+    }
+}
