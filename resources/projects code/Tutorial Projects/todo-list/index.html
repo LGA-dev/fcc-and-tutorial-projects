@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>V3</title>
+</head>
+<body style="background-color:steelblue">
+    <h1>Todo list</h1>
+
+    <!-- Toggle all -->
+    <div>
+        <!-- On click, run the method on the handlers object -->
+        <button onclick="handlers.toggleAll()">Toggle All</button>
+    </div>
+
+    <!-- Add todo -->
+    <div>
+        <!-- On click, run the method on the handlers object -->
+        <button onclick="handlers.addTodo()">Add</button>
+        <!-- This input is for adding a new todo (text) -->
+        <input id="addTodoTextInput" type="text">
+    </div>
+
+    <!-- Change todo -->
+    <div>
+        <!-- On click, run the method on the handlers object -->
+        <button onclick="handlers.changeTodo()">Change Todo</button>
+        <!-- This input is for the position -->
+        <input id="changeTodoPositionInput" type="number">
+        <!-- This input is for the text -->
+        <input id="changeTodoTextInput" type="text">
+    </div>
+
+    <!-- Toggle completed -->
+    <div>
+        <button onclick="handlers.toggleCompleted()">Toggle completed</button>
+        <input id="toggleCompletedPositionInput" type="number">
+    </div>
+
+    <!-- List of todos -->
+    <ul>
+
+    </ul>
+</body>
+<script src="/main.js"></script>
+</html>

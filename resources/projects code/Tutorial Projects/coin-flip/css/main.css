@@ -1,0 +1,214 @@
+/* 
+======================================================
+00. Global variables
+01. Body
+02. Grid container
+03. Card element
+    03.01 Results count
+        03.01.a Heads count
+        03.01.b Tails count
+    03.02 Current result
+    03.03 Coin container
+        03.03.01 Coin element
+            03.03.01.a Front face
+            03.03.01.b Back face
+    03.04 Coin button
+04. Animations
+05. Extra
+====================================================== 
+*/
+
+/* 00.  ==  Global variables */
+
+:root {
+    --primary-color: #264de4;
+    --secondary-color: #2979f1;
+    --highlight-color: #32a3ff;
+    --background-color: #15235F;
+    --light-color: #ebebeb;
+    --gray-color: #999;
+    --dark-color: #333;
+    --max-width: 480px;
+    --max-height: 720px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* 01.  ==  Body */
+
+body {
+    background: var(--background-color);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--light-color);
+}
+
+/* 02.  ==  Grid container */
+
+.wrapper {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* 03.  ==  Card element */
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 5fr 2fr;
+    width: var(--max-width);
+    height: var(--max-height);
+    background: var(--primary-color);
+    border: 2px solid var(--light-color);
+    font-size: 1.75rem;
+    box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.40);
+}
+
+/* 03.01  ==  Results count element */
+
+.results-container {
+    display: flex;
+    background: var(--secondary-color);
+    border-bottom: 1px solid var(--light-color);
+}
+
+/* 03.01.a  ==  Heads count */
+
+.results-container .heads-count {
+    width: 50%;
+    border-right: 1px solid white;
+}
+
+/* 03.01.b  ==  Tails count */
+
+.results-container .tails-count {
+    width: 50%;
+}
+
+/* 03.02  ==  Current result element */
+
+.current-result-container {
+    /* Empty */
+}
+
+/* 03.03  ==  Coin container element */
+
+.coin-element-container {
+    background: var(--dark-color);
+    border-top: 1px solid var(--light-color);
+    border-bottom: 1px solid var(--light-color);
+}
+
+/* 03.03.01  ==  Coin element */
+
+.coin-element {
+    width: 300px;
+    height: 300px;
+    transform-style: preserve-3d;
+    background: var(--light-color);
+    color: var(--dark-color);
+    border: 2px dotted var(--gray-color);
+    border-radius: 50%;
+    font-size: 3rem;
+}
+
+/* 03.03.01.a  ==  Front face */
+
+.coin-element-front {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%; 
+    backface-visibility: hidden;
+}
+
+/* 03.03.01.b  ==  Back face */
+
+.coin-element-back {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%; 
+    backface-visibility: hidden;
+    transform: rotateX(180deg);
+}
+
+/* 03.04  ==  Coin button element container */
+
+.coin-button-container {
+    /* Empty */
+}
+
+/* 03.04.01  ==  Coin button element */
+
+.coin-button-container button {
+    background: var(--secondary-color);
+    border: 1px solid var(--gray-color);
+    color: var(--light-color);
+    width: 300px;
+    height: 88px;
+    font-size: 1.9rem;
+    cursor: pointer;
+}
+
+/* 04.  ==  Animations */
+
+.clickAnimation {
+    animation: clickAnimation 0.5s;
+}
+
+@keyframes clickAnimation {
+    50% {
+        background: var(--highlight-color);
+        color: white;
+    }
+}
+
+.flipAnimation {    
+    transform: rotateX(1800deg);
+    transition: 3s;
+}
+
+.fadeInAnimation {
+    animation: fadeInAnimation 3s;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        color: transparent;
+    }
+
+    25% {
+        color: transparent;
+    }
+
+    50% {
+        color: transparent;
+    }
+
+    75% {
+        color: var(--dark-color);
+    }
+
+    100% {
+        color: var(--dark-color);
+    }
+}
+
+/* 05.  ==  Extra */
+
+/* Align elements to the center */
+.results-container,
+.results-container .heads-count,
+.results-container .tails-count,
+.current-result-container,
+.coin-element-container,
+.coin-element,
+.coin-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,32 @@
+.row {
+    /* border: 1px solid cyan; */
+    /* margin: 1rem; */
+}
+
+.col {
+    /* border: 1px solid magenta; */
+    /* margin: 1rem; */
+}
+
+.p-3 {
+    /* border: 1px solid lightyellow; */
+    /* width: auto;
+    height: 4rem; */
+}
+
+.btn {
+    width: 9%;
+    height: 4rem;
+}
+
+.number-box {
+    border: 1px solid #999;
+    width: 9%;
+    height: auto;
+}
+
+.center-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
