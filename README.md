@@ -1,6 +1,6 @@
-# JavaScript Projects
+# Tutorial Projects
 
-> A repository containing all Javascript projects I've done from various sources (listed below).
+> A repository containing all the tutorial projects I've done from various sources (listed below).
 
 ## Udemy & others
 
@@ -18,6 +18,9 @@ https://www.udemy.com/course/the-complete-javascript-course/
 
 * Gordon Zhu's
 https://watchandcode.com/
+
+* FreeCodeCamp
+https://www.freecodecamp.org/
 
 ## Youtube channels
 
