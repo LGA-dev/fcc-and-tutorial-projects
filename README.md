@@ -1,7 +1,3 @@
-# Tutorial Projects
-
-> A repository containing all the tutorial projects I've done from various sources (listed below).
-
 ## Udemy & others
 
 * Andrei Neagoie's
