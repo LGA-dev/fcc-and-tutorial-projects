@@ -2,7 +2,7 @@
 @import "../../vendor/bootstrap/scss/bootstrap"; // Include all of Bootstrap
 
 body {
-  background: linear-gradient(to bottom, rgb(15, 15, 15), rgb(88, 180, 255));
+  // background: linear-gradient(to bottom, rgb(15, 15, 15), rgb(88, 180, 255));
   height: 100vh;
   position: relative;
 }
@@ -12,4 +12,5 @@ body {
 #youtube-projects,
 #udemy-projects {
   height: 100vh;
+  outline: 1px solid red;
 }
