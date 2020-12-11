@@ -1,0 +1,27 @@
+{
+  "name": "bootstrap-sass-fontawesome-gulp-boilerplate",
+  "version": "1.0.0",
+  "description": "A boilerplate for front-end projects that includes Gulp 4, Bootstrap 4.5, Sass, FontAwesome 5, BrowserSync and Autoprefixer.",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "keywords": [],
+  "author": "Luciano Alcaraz",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1",
+    "bootstrap": "^5.0.0-beta1",
+    "jquery": "^3.5.1",
+    "@popperjs/core": "^2.5.4"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.13",
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.3.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-autoprefixer": "^7.0.1",
+    "del": "6.0.0",
+    "merge-stream": "2.0.0"
+  }
+}

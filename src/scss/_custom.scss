@@ -1,0 +1,26 @@
+// Modify the default map
+$theme-colors: (
+  "primary": #24860b,
+  "secondary": #860b44,
+  "success": #72d6c9,
+  "info": #00aedb,
+  "warning": #df7599,
+  "danger": #ffc785,
+  "purple": #b19cd9,
+  "light": #999,
+  "dark": #111
+);
+
+// Create your own map
+$custom-colors: (
+  "tertiary": #0b6d86,
+  "quarternary": #2d177c
+);
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+// Modify bootstrap utility class
+.btn {
+  border-radius: 0!important;
+}
