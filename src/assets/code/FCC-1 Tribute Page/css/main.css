@@ -1,0 +1,109 @@
+:root {
+	--max-width: 1200px;
+	--primary-color: #116973;
+	--lighter-color: #fafafa;
+	--light-color: #f3f3f3;
+	--gray-color: #c4c4c4;
+	--dark-color: #333;
+	--darker-color: #111;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 10px;
+	scroll-behavior: smooth;
+}
+
+body {
+	background: rgb(156,211,187);
+	background: linear-gradient(0deg, rgb(115, 27, 17) 0%, rgb(197, 197, 197) 50%, rgba(17,105,115,1) 100%);
+	color: var(--dark-color);
+
+	font-family: 'Roboto', sans-serif;
+	font-size: 2rem;
+	text-align: center;
+	line-height: 1.5;
+}
+
+main {
+	display: flex;
+  flex-direction: column;
+	justify-content: center;
+}
+
+.container {
+	max-width: var(--max-width);
+	height: auto;
+	margin: 0 auto;
+
+	background: var(--light-color);
+	border-radius: 15rem;
+}
+
+/* Tribute Title */
+
+#tribute-title h1 {
+  font-size: 8rem;
+	margin: 2rem 0;
+	font-family: 'Chicle', cursive;
+	letter-spacing: 2px;
+}
+
+#tribute-title p {
+	margin: 1.5rem 0;
+	font-size: 2.25rem;
+	font-style: oblique;
+}
+
+img {
+	max-width: 100%;
+  display: block;
+}
+
+#img-caption {
+	padding: 1rem 0rem;
+	background: #d3d3d3;
+}
+
+/* Tribute Title */
+
+
+/* Tribute Info */
+
+#headline {
+	margin: 4rem 0rem;
+}
+
+ul {
+  max-width: 800px;
+	margin: 0 auto;
+}
+
+li {
+	padding: 1.5rem;
+	list-style: none;
+}
+
+strong {
+	font-size: 2.3rem;
+}
+
+.tribute-info-text {
+	text-align: justify;
+	margin: 2rem 0;
+}
+
+#bottom-page-link {
+	margin: 2rem 0rem 1rem 0rem;
+}
+
+hr {
+	border: 2px solid var(--primary-color);
+}
+
+/* Tribute Info */

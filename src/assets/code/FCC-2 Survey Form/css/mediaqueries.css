@@ -1,0 +1,20 @@
+/* Small devices (smartphones, less than 576px) */
+@media (max-width: 575.98px) {
+	html {
+			font-size: 7px;
+	}
+
+	form {
+		min-width: 100%;
+		margin: 0;
+	}
+
+	.checkboxes-group label,
+.radio-group label {
+	padding: 0 1rem;
+}
+
+	textarea {
+		height: 10rem;
+	}
+}
