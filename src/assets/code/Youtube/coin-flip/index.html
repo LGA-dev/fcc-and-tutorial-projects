@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/mediaqueries.css">
+    <title>Coin flipper</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="card">
+            <div class="results-container">
+                <div class="heads-count">
+                    <p id="heads-counter">
+                        Heads: 0 
+                    </p>
+                </div>
+                <div class="tails-count">
+                    <p id="tails-counter">
+                        Tails: 0 
+                    </p>
+                </div>
+            </div>
+            <div class="current-result-container">
+                <p id="text-change">
+                    Flip to start
+                </p>
+            </div>
+            <div class="coin-element-container">
+                <div class="coin-element" id="coin-element">
+                    <div class="coin-element-front">
+                        <!-- Text is generated through result -->
+                    </div>
+                    <div class="coin-element-back">
+                        <!-- Text is generated through result -->
+                    </div>
+                </div>
+            </div>
+            <div class="coin-button-container">
+                <button id="flip-button">
+                    Click to flip the coin
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/main.js"></script>
+</html>
