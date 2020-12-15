@@ -1,15 +1,16 @@
-// import "../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
 // Delete these if you don't need them
 
 // Enable popovers (popovers aren't going to work without this)
-// $(function () {
-//   $('[data-toggle="popover"]').popover()
-// })
-var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+let popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+let popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
   return new bootstrap.Popover(popoverTriggerEl)
 })
 
+// Enable tooltips (tooltips aren't going to work without this) 
+let tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+let tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
 
 // Check if jquery is working
 function checkJquery() {
