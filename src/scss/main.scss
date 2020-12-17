@@ -2,18 +2,19 @@
 @import "../../vendor/bootstrap/scss/bootstrap"; // Include all of Bootstrap
 
 body {
-  // background: linear-gradient(to bottom, rgb(15, 15, 15), rgb(88, 180, 255));
   height: 100vh;
-  position: relative; // Needed for scrollspy 
+  position: relative; // Needed for scrollspy
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.5;
 }
 
-#home {
-  height: 100vh;
-  // padding: 0;
-  // margin: 0;
-}
+// #home {
+//   height: 100vh;
+// }
 
-// #home,
+#home,
 #fcc-projects,
 #youtube-projects,
 #udemy-projects {
@@ -24,6 +25,12 @@ body {
 section {
   padding-top: 4rem;
   padding-bottom: -4rem;
-  // margin-top: -4rem;
-  // outline: 1px solid blue;
+}
+
+h5 {
+  font-family: 'Lato', sans-serif;
+}
+
+.badge {
+  font-weight: 400;
 }
