@@ -9,11 +9,21 @@ body {
 
 #home {
   height: 100vh;
+  // padding: 0;
+  // margin: 0;
 }
 
-#home,
+// #home,
 #fcc-projects,
 #youtube-projects,
 #udemy-projects {
-  outline: 1px solid red;
+  // outline: 1px solid red;
+  min-height: 100vh;
+}
+
+section {
+  padding-top: 4rem;
+  padding-bottom: -4rem;
+  // margin-top: -4rem;
+  // outline: 1px solid blue;
 }
